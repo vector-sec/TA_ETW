@@ -270,7 +270,7 @@ TA_ETW by default interprets the name of a field in the YAML config as the name 
 
 If a property of the ETW event class itself is needed, such as the event's EventId, the `IsField` option should be set to `false` to indicate to TA_ETW that it should look at the properties of the object rather than in its field data for the desired information.
 
-When collecting a property of the ETW event, no extraction method is required but the datatype of the property must be JSON [serializable by JSON.Net](https://www.newtonsoft.com/json/help/html/SerializationGuide.htm).
+When collecting a property of the ETW event, no extraction method is required but the datatype of the property must be [serializable by JSON.Net](https://www.newtonsoft.com/json/help/html/SerializationGuide.htm).
 
 ###### Config showing collection of property data instead of field data
 ```yaml
@@ -282,7 +282,6 @@ Traces:
       Fields:
       - Name: Id
         IsField: false
-        ExtractionMethod: GetInt32
 ```
 
 ### Filtering
