@@ -293,8 +293,6 @@ The options for filtering are:
 * Contains
 * EndsWith
 
-Note: while multiple filters may be configured by declaring multiple StartsWith, Contains, or EndsWith sections, each section should have only a single criterion.
-
 ###### Config showing filtering based on field value
 ```yaml
 Traces:
@@ -308,7 +306,6 @@ Traces:
         Filters: 
           EndsWith:
           - microsoft.com.
-          EndsWith:
           - google.com.
 ```
 
