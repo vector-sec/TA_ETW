@@ -61,7 +61,6 @@ Traces: # Collection of traces to run [required]
         ExtractionMethod: GetAnsiString
         Filters: # Collection of filters to apply to the field, if a field matches a filter the entire event that it belongs to is discarded [optional]
                  # The filter options are StartsWith, Contains, and EndsWith
-                 # Note: while you may use multiple filters by declaring multiple StartsWith, Contains, or EndsWith sections, each section should have only a single criteria
           EndsWith: # Indicates that the EndsWith filter method should be used [optional]
           - microsoft.com. # Indicates that if the value of the QNAME field ends with microsoft.com. the event should be discarded [required if using a filter]
         TransformationMethod: # Indicates that the value of the field should be modified prior to being output
